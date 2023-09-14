@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Heebo";
+  letter-spacing: 2px;
+  color: #e7eaf6;
+  background: #113f67;
+}
+.header {
+  background: #38598b;
+  border-radius: 20px;
+  margin: 30px 60px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header #form label {
+  background: #113f67;
+  border-radius: 20px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header #form .search {
+  outline: none;
+  border: 0;
+  border-radius: 20px;
+  width: 150px;
+  padding: 15px 10px;
+  color: #e7eaf6;
+  font-size: 18px;
+  background: #113f67;
+}
+.header #form img {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+}
+.header #form .search::placeholder {
+  color: #e7f6e8;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 30px;
+}
+.content .movie {
+  box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+  background: #777da7;
+  cursor: pointer;
+  width: 250px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  gap: 10px;
+  margin: 10px;
+  height: auto;
+}
+.content .movie .img-disc {
+  border-radius: 5px;
+  height: auto;
+  margin: 10px 0 15px;
+  position: relative;
+  overflow: hidden;
+}
+.content .movie .img-disc img {
+  border-radius: 5px;
+  width: 100%;
+}
+.content .movie .img-disc .discription {
+  letter-spacing: 0;
+  color: #113f67;
+  background-color: white;
+  padding: 5px;
+  position: absolute;
+  width: 100%;
+  bottom: -101%;
+  max-height: 100%;
+  height: 80%;
+}
+.content .movie .img-disc:hover .discription h4 {
+  margin: 20px 0;
+}
+.content .movie .img-disc:hover .discription {
+  transition: 0.5s ease-out;
+  bottom: 0;
+}
+
+.content .movie .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px;
+}
+.content .movie .details .rate {
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
