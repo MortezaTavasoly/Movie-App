@@ -53,9 +53,9 @@ const getMovies = (url: string) => {
             </div>
             <div class="details">
               <h4 class="title">${movie.title}</h4>
-              <h4 class="rate" style="color:${rateCol()};">${
-            movie.vote_average
-          }</h4>
+              <h4 class="rate" style="color:${rateCol()};">${movie.vote_average
+            .toString()
+            .substring(0, 3)}</h4>
             </div>
        `;
 
