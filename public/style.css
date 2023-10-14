@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
-@font-face {
-  font-family: "Heebo", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
-}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -109,4 +106,28 @@ body {
   padding: 5px 10px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+    margin: 30px auto;
+    flex-direction: column;
+    border-radius: 0;
+    padding: 20px 0;
+  }
+  .header #form {
+    width: 50%;
+    margin-top: 20px;
+  }
+  .header #form .search {
+    width: 70%;
+  }
+  .content .movie {
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .header #form {
+    width: 90%;
+  }
 }
